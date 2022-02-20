@@ -1,0 +1,74 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    margin-top: 20px;
+    text-align: center;
+}
+
+body{
+    text-align: center;
+}
+
+.contact-container{
+    text-align: center;
+   margin: 2px auto;
+   display: inline-block;
+}
+
+li{
+    color: rgb(133, 71, 71);
+    background-color: rgb(172, 158, 158);
+    width: 600px;
+margin: 3px auto;
+    border: 2px solid red;
+    display: flex;
+list-style: none;
+}
+
+li .name{
+    width: 40%;
+padding-left: 35px;
+    text-align: left;
+}
+
+li .phone{
+    text-align: left;
+    width: 40%;
+    padding-left: 85px;
+}
+
+li .del{
+    width: 20%;
+    margin: auto;
+
+}
+
+form{
+display: flex;
+justify-content: space-between;
+width: 600px;
+margin: 2px auto;
+margin-left:429px
+}
+
+input{
+    width: 230px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid rgb(212, 207, 207);
+    border-width: 2px;
+}
+
+.btn{
+    padding: 8px 8px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+

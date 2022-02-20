@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            <% locals.title %>
+        </title>
+        <script src="https://kit.fontawesome.com/7b9704b8c9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/logic.js" defer></script>
+    </head>
+    <body>
+        <h2 class="heading">My Contacts List</h2>
+        <div class="contact-container">
+            <ul>
+                <% for(let i of contact_list){ %>
+                    <li>
+                        <p class="name"><%= i.name %></p>
+                        <p class="phone"><%= i.phone %></p>
+                        <a class="del" href="/delete-contact/?phone=<%= i.phone %>">
+                            <i class="fas fa-user-times del-btn"></i>
+                        </a>
+                    </li>
+                <%}%>
+            </ul>
+        </div>
+
+            <form action="/create-contact" method="POST">
+                <input type="text" name="name" id="" placeholder="Name" required>
+                <input type="number" name="phone" id="" placeholder="Phone no." required>
+                <button class="btn" type="submit"> Add Contact </button>
+            </form>
+    </body>
+</html>
